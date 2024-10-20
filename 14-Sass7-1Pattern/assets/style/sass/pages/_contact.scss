@@ -1,0 +1,89 @@
+#Contact {
+   
+  width: 100%;
+  margin-top: 12.8rem;
+  .cont {
+    padding-left: 30px;
+    padding-bottom: 59px;
+    p {
+      color: #2d2d2b;
+      font-family: Didot;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 52px;
+      text-align: left;
+    }
+  }
+  .LOGIN {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .name {
+    padding: 17px 0px 0px 20px;
+    width: 563px;
+    height: 54px;
+    top: 5024px;
+    left: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #d4c8be;
+    input {
+      background-color: transparent;
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      border: none;
+    }
+
+    // background-color: red;
+  }
+
+  .message {
+    width: 563px;
+    height: 136px;
+    top: 5231px;
+    left: 30px;
+    padding: 17px 0px 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #d4c8be;
+    background-color: ed;
+
+    input {
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .logBUT {
+    width: 563px;
+    height: 54px;
+    top: 5387px;
+    left: 30px;
+    padding: 17px 0px 0px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #B8926A;
+button{
+    font-family: Raleway;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+background-color: #B8926A;
+color: #EAE6DF;
+border: none;
+}
+  }
+}

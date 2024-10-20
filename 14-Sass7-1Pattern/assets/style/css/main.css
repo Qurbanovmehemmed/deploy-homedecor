@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #EAE6DF;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 112.8rem;
+  height: 4.8rem;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.homeStart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeStart .HomeDecor {
+  padding-top: 18px;
+}
+.homeStart .langSearch {
+  padding: 25px 0px 0px 30px;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+.homeStart .langSearch .lang {
+  width: 32px;
+  height: 30px;
+  top: 25px;
+  left: 30px;
+  border-radius: 5px;
+  border: 1px solid #d4c8be;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.homeStart .HomeDecor a {
+  color: #2D2D2B;
+  font-family: Didot;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.homeStart .pay {
+  padding: 28px 30px 0px 0px;
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+.homeStart .pay .burgerK {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  display: none;
+}
+
+.direction {
+  padding-top: 2.7rem;
+  width: 100%;
+  gap: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.direction span {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+@media (max-width: 683px) {
+  .homeStart .langSearch {
+    display: none;
+  }
+  .homeStart .pay .child {
+    display: none;
+  }
+  .homeStart .pay .burgerK {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    cursor: pointer;
+  }
+  .direction {
+    display: none;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15rem;
+  padding: 0px 30px 20px 30px;
+}
+footer span {
+  font-family: Didot;
+  font-size: 52.2px;
+  font-weight: 400;
+  line-height: 58px;
+  text-align: center;
+  color: #2D2D2B;
+}
+footer p {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+#start {
+  display: flex;
+  width: 100%;
+  height: 75.7rem;
+  padding: 35px 30px 0px 30px;
+  position: relative;
+}
+#start .mainText {
+  position: absolute;
+  z-index: 3;
+  width: 60%;
+  padding-top: 12.4rem;
+}
+#start .mainText .hBIR {
+  font-family: Didot;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  text-align: left;
+}
+#start .mainText .pBIR {
+  margin-top: 5rem;
+  width: 44.7rem;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+#start .but button {
+  margin-top: 4rem;
+  width: 330px;
+  height: 54px;
+  top: 551px;
+  left: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  background: #b8926a;
+  cursor: pointer;
+  color: #eae6df;
+}
+#start .mainImage {
+  position: absolute;
+  right: 3rem;
+}
+#start .mainImage .balaca {
+  display: none;
+}
+#start .mainImage .imgFirst {
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-64%);
+}
+#start .mainImage .blur {
+  z-index: 2;
+  width: 33rem;
+  height: 75.8rem;
+  transform: translateX(-177%);
+  left: 0;
+  border-radius: 8px;
+  position: relative;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+@media (max-width: 683px) {
+  #start {
+    display: block;
+  }
+  #start .mainText {
+    top: 0;
+    width: 100%;
+    transform: translateX(10%);
+  }
+  #start .mainText .hBIR {
+    font-family: Didot;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+  }
+  #start .mainText .pBIR {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  #start .mainText .but {
+    width: 288px;
+    height: 54px;
+    top: 343px;
+    left: 16px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+  }
+  #start .mainImage {
+    width: 288px;
+    height: 239px;
+    top: 447px;
+    left: 16px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    transform: translateX(30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #start .mainImage .blur {
+    display: none;
+  }
+  #start .mainImage .imgFirst {
+    display: none;
+  }
+  #start .mainImage .balaca {
+    display: block;
+  }
+}
+#startBottom {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#startBottom .product {
+  width: 330px;
+  height: 193px;
+  top: 957px;
+  left: 380px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.4) 100%);
+}
+#startBottom .product .bottomBlur {
+  width: 330px;
+  height: 55px;
+  top: 1150px;
+  left: 30px;
+  gap: 0px;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: translateY(-105%);
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #EAE6DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#startBottom .bottomend {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+#startBottom .bottomend .leftright {
+  width: 9.1rem;
+  height: 4.4rem;
+  right: 0;
+}
+
+@media (max-width: 683px) {
+  #startBottom {
+    width: 100%;
+  }
+  #startBottom .bottomend {
+    display: none;
+  }
+}
+#about {
+  margin-top: 12.8rem;
+}
+#about .sofaSECOND {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .sofaSECOND button {
+  width: 330px;
+  height: 54px;
+  top: 1791px;
+  left: 776px;
+  border-radius: 10px;
+  border: 1px solid #b8926a;
+  color: #b8926a;
+  background-color: transparent;
+}
+#about p {
+  padding: 0px 0px 0px 90px;
+  font-family: Didot;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+}
+#about .sofaIMG {
+  padding: 50px 0px 0px 30px;
+}
+#about .sofaTEXT {
+  padding-left: 6.6rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+#about .sofaTEXT .learn {
+  padding-left: 7rem;
+}
+#about .sofaTEXT p {
+  width: 56.3rem;
+  height: 26.7rem;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #2d2d2b;
+}
+
+@media (max-width: 1000px) {
+  #about {
+    display: block;
+  }
+  #about .sofaSECOND {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#discount {
+  margin: 0 auto;
+  width: 144.4rem;
+  height: 36.7rem;
+  margin-top: 14rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#discount .fullTEXT {
+  position: absolute;
+  top: 0;
+  padding: 62px 471px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#discount .fullTEXT .ftext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#discount .fullTEXT .but10 {
+  width: 330px;
+  height: 54px;
+  top: 2249px;
+  left: 555px;
+  gap: 0px;
+  border-radius: 10px;
+}
+#discount .fullTEXT .but10 button {
+  background: #b8926a;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 54px;
+  top: 2249px;
+  left: 555px;
+  gap: 0px;
+  border-radius: 10px;
+}
+#discount .fullTEXT :nth-child(1) {
+  font-family: Didot;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+  color: #EAE6DF;
+}
+#discount .fullTEXT :nth-child(2) {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #EAE6DF;
+  opacity: 0.6;
+}
+
+#card {
+  margin-top: 12.8rem;
+}
+#card .cardSTART {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 59px 30px;
+}
+#card .cardHEAD p {
+  cursor: pointer;
+  font-family: Didot;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+}
+#card .cardSEE {
+  cursor: pointer;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #b8926a;
+  text-decoration: underline;
+}
+#card .cardIMAGE .firstIMG {
+  width: 33rem;
+  height: 26.7rem;
+}
+#card .cardIMAGE .iconHEART {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+}
+#card .cardAREA {
+  width: 33rem;
+  height: 45rem;
+  position: relative;
+  cursor: pointer;
+}
+#card .cardAREA .cardCONTENT p {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+#card .cardAREA .cardCONTENT span {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #b8926a;
+}
+#card .CARDS {
+  padding: 0px 30px 45px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#Collections {
+  background: #d4c8be;
+  width: 100%;
+  height: 63rem;
+}
+#Collections .collectSTART {
+  padding: 81px 29px 59px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Collections .collectSTART .collectHEAD {
+  font-family: Didot;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+  cursor: pointer;
+}
+#Collections .collectSTART .collectSEE {
+  cursor: pointer;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #b8926a;
+  text-decoration: underline;
+}
+#Collections .collEND {
+  cursor: pointer;
+  width: 138rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#Collections .collEND .colBLUR {
+  color: w;
+  width: 446px;
+  height: 73px;
+  top: 4643px;
+  left: 30px;
+  gap: 0px;
+  border-radius: 10px;
+  transform: translateY(-102%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#Collections .collEND .colBLUR span {
+  color: #EAE6DF;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  padding-top: 2.7rem;
+  justify-content: center;
+}
+
+#Contact {
+  width: 100%;
+  margin-top: 12.8rem;
+}
+#Contact .cont {
+  padding-left: 30px;
+  padding-bottom: 59px;
+}
+#Contact .cont p {
+  color: #2d2d2b;
+  font-family: Didot;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+}
+#Contact .LOGIN {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#Contact .name {
+  padding: 17px 0px 0px 20px;
+  width: 563px;
+  height: 54px;
+  top: 5024px;
+  left: 30px;
+  border-radius: 10px;
+  border: 1px solid #d4c8be;
+}
+#Contact .name input {
+  background-color: transparent;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  border: none;
+}
+#Contact .message {
+  width: 563px;
+  height: 136px;
+  top: 5231px;
+  left: 30px;
+  padding: 17px 0px 0px 20px;
+  border-radius: 10px;
+  border: 1px solid #d4c8be;
+  background-color: ed;
+}
+#Contact .message input {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+}
+#Contact .logBUT {
+  width: 563px;
+  height: 54px;
+  top: 5387px;
+  left: 30px;
+  padding: 17px 0px 0px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B8926A;
+}
+#Contact .logBUT button {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: #B8926A;
+  color: #EAE6DF;
+  border: none;
+}

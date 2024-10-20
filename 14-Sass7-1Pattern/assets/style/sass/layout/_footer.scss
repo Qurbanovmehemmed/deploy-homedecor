@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15rem;
+    padding: 0px 30px 20px 30px;
+    // background-color: red;
+
+    span{
+        font-family: Didot;
+font-size: 52.2px;
+font-weight: 400;
+line-height: 58px;
+text-align: center;
+color: #2D2D2B;
+
+    }
+
+    p{
+        font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+    }
+  
+}

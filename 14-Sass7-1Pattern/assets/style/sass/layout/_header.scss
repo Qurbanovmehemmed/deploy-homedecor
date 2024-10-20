@@ -1,0 +1,97 @@
+.homeStart {
+  width: 100%;
+  .HomeDecor {
+    padding-top: 18px;
+  }
+  @include flex;
+  .langSearch {
+    padding: 25px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    cursor: pointer;
+    .lang {
+      width: 32px;
+      height: 30px;
+      top: 25px;
+      left: 30px;
+
+      border-radius: 5px;
+      border: 1px solid #d4c8be;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .HomeDecor {
+  a{
+    color:  #2D2D2B;
+    
+    font-family: Didot;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  }
+
+  .pay {
+    padding: 28px 30px 0px 0px;
+    display: flex;
+    gap: 1.6rem;
+    cursor: pointer;
+    .burgerK {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      display: none;
+    }
+  }
+}
+.direction {
+  padding-top: 2.7rem;
+  width: 100%;
+  gap: 7rem;
+  display: flex;
+  justify-content: center;
+  span {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 683px) {
+  .homeStart {
+    .langSearch {
+      display: none;
+    }
+
+    .pay {
+   .child{
+    display: none;
+   }
+      .burgerK {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .direction{
+    display: none;
+  }
+}
